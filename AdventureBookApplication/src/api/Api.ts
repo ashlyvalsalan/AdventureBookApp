@@ -23,7 +23,7 @@ export const GetAdventureById = async (id: number) => {
  export const editAdventure = async (adventure: any) => {
   // console.log("Edit window");
   // console.log(adventure);
-  const url = `https://localhost:5001/api/AdventureBook/UpdateAdventure`;
+  const url = `https://adventure-book-api.azurewebsites.net/api/AdventureBook/UpdateAdventure`;
   await fetch(url, {
     method: "PUT",
     headers: {
@@ -36,7 +36,7 @@ export const GetAdventureById = async (id: number) => {
 export const deleteAdventure = async (adventureId: any) => {
   console.log("Delete api");
   // console.log(adventureId);
-  const url = `https://localhost:5001/api/AdventureBook/DeleteAdventure/${adventureId}`;
+  const url = `https://adventure-book-api.azurewebsites.net/api/AdventureBook/DeleteAdventure/${adventureId}`;
   await fetch(url, {
     method: "DELETE",
     headers: {
@@ -48,7 +48,7 @@ export const deleteAdventure = async (adventureId: any) => {
 
 export const addAdventure = async (adventure: any) => {
   console.log(adventure.adventureStruct);
-  const url = `https://localhost:5001/api/AdventureBook/AddAdventure`;
+  const url = `https://adventure-book-api.azurewebsites.net/api/AdventureBook/AddAdventure`;
   await fetch(url, {
     method: "POST",
     headers: {
