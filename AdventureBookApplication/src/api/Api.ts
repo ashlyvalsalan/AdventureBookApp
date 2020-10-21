@@ -5,7 +5,7 @@ const API_BASE_URL =
 let adventureList: any;
 
 const getAdventures = async () => {
-  const url = `https://localhost:5001/api/AdventureBook/GetAdventure`;
+  const url = `https://adventure-book-api.azurewebsites.net/api/AdventureBook/GetAdventure`;
   const res = await fetch(url); //.then(res => res.json).then(res => JSON.parse(res));
   // console.log("api");
   const data = await res.json();
